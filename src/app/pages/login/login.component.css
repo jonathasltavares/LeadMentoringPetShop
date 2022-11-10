@@ -1,0 +1,61 @@
+.login-flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.login-div-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 400px;
+    background:linear-gradient( rgba(3, 34, 81, 0.85) 100%, rgba(3, 34, 81, 0.85)100%), url("/assets/images/login-background.svg");
+    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+
+}
+.login-div-text-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.login-petshop-text{
+    font-size: 94px;
+}
+.login-line{
+    height: 65px;
+    width: 1%;
+    border-left: 2px solid #ffffff;
+    margin-left: 10px;
+}
+.login-leadPetshop-text{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight:300;
+    width: 62px;
+}
+.login-icon-pet-div{
+    height: 100%;
+}
+.login-copyright{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 14px;
+    line-height: 16px;
+}
+.login-div-copy-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+}
+.login-div-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
