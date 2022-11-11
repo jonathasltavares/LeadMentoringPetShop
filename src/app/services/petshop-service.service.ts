@@ -7,10 +7,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class PetshopServiceService {
   private apiUrl = "http://localhost:8080/PetShop"
   constructor(private http:HttpClient) { }
-
-  getByEmail(email:string){
-    return this.http.get<any>(`${this.apiUrl}/login?email=${email}`)
-  }
   getAll(){
     return this.http.get<any>(this.apiUrl)
   }
