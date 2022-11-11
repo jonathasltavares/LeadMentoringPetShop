@@ -1,0 +1,59 @@
+label{
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.login-form-container{
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+.dds__form.dds__container{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+input{
+    width: 400px;
+    height: 40px;
+    border-style: solid;
+    border-color: #C8C9C7;
+}
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #C8C9C7;
+}
+.dds__col--1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+button{
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.possuiconta{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+    padding-top: 10px;
+}
+span{
+    color: #006BBD;
+    cursor: pointer;
+}

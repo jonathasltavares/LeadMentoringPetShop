@@ -2,10 +2,7 @@
 footer{
     width: 100%;
     height: fit-content;
-    position: absolute;
-    bottom: 0;
     background: #00447C;
-;
 }
 
 .footer-flex-container{
