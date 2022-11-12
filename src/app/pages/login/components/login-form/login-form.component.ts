@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PetshopServiceService } from 'src/app/services/petshop-service.service';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/services/login.service';
+import { RequestLogin } from 'src/app/shared/models/request-login';
 
 @Component({
   selector: 'app-login-form',
@@ -8,20 +10,25 @@ import { PetshopServiceService } from 'src/app/services/petshop-service.service'
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor(private petshopService: PetshopServiceService) { }
+  public requestLogin!: RequestLogin
+  public incorrectInfo: boolean = false
+  constructor(private loginService: LoginService, private router: Router ) { }
 
   ngOnInit(): void {
+    this.requestLogin = new RequestLogin()
   }
 
   login(){
-    let email = document.getElementById("text-input-email") as HTMLInputElement
-    this.petshopService.getByEmail(email.value).subscribe(
-      resultado => {
-        console.log(resultado)
+    this.loginService.login(this.requestLogin)
+      .subscribe(result =>{
+        window.sessionStorage.setItem('session', `name:${result.name}, logo:${result.logo}`)
+        //this.router.navigate('/')
+        this.incorrectInfo=false
       },
-      erro => {
-        
-      }  
-    )}
+      erro =>{
+        window.sessionStorage.clear()
+        this.incorrectInfo = true
+      })  
+  }
 }
 

@@ -1,3 +1,7 @@
+<div class="incorrectinfo" *ngIf="incorrectInfo">
+  <img src="assets\images\dds__close-cir 1.svg" alt="">
+  <p class="pIncorrectInfo">E-mail ou senha estão incorretos. Por favor, tente novamente.</p>
+</div>
 <section class="login-form-container">
   <form data-dds="form" class="dds__form dds__container">
     <fieldset class="dds__form__section">
@@ -13,6 +17,7 @@
                 id="text-input-email"
                 required=""
                 placeholder="Digite seu E-mail"
+                [(ngModel)] = requestLogin.email
                 aria-labelledby="text-input-label-446747117 text-input-helper-446747117"
               />
   
@@ -31,6 +36,7 @@
                 id="text-input-control-897251573"
                 required=""
                 placeholder="Digite sua senha"
+                [(ngModel)] = requestLogin.password
                 aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
               />
   
