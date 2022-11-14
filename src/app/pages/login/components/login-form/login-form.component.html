@@ -1,4 +1,4 @@
-<div class="incorrectinfo" *ngIf="incorrectInfo">
+<div class="incorrectinfo" *ngIf="infoErrada">
   <img src="assets\images\dds__close-cir 1.svg" alt="">
   <p class="pIncorrectInfo">E-mail ou senha estão incorretos. Por favor, tente novamente.</p>
 </div>
@@ -48,6 +48,6 @@
       </div>
     </fieldset>
     <button class="dds__button" type="button" (click)="login()">LOGIN</button>
-    <p class="possuiconta">Não possui conta? <span>Criar conta</span></p>
+    <p class="possuiconta">Não possui conta? <span (click)="ancorCadastro()">Criar conta</span></p>
   </form>
 </section>

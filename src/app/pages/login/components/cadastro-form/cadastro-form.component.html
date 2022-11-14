@@ -1,0 +1,108 @@
+<div class="cadastro-titulos"><h1>Criar conta</h1>
+<h2>Informações da empresa</h2></div>
+
+<section class="cadastro-form-container">
+    <form data-dds="form" class="dds__form dds__container">
+      <fieldset class="dds__form__section">
+        <div class="dds__row">
+          <div class="dds__col--1 dds__col--sm-3">
+            <div class="dds__input-text__container">
+              <label id="text-input-label-446747117" for="text-input-control-nomedaempresa">Nome da empresa <span>*</span></label>
+              <div class="dds__input-text__wrapper">
+                <input
+                    type="text"
+                    class="dds__input-text"
+                    name="text-input-control-name-446747117"
+                    id="text-input-nome-empresa"
+                    required=""
+                    placeholder="Digite o nome da empresa"
+                    [(ngModel)] = "requestCadastro.name"
+                    aria-labelledby="text-input-label-446747117 text-input-helper-446747117"
+                  />
+              <div id="text-input-error-446747117" class="dds__invalid-feedback">Insira o nome da empresa</div>
+            </div>
+          </div>
+              <div class="dds__input-text__container">
+                <label id="text-input-label-897251573" for="text-input-control-linkdalogo">Link da logo da empresa <span>*</span></label>
+                <div class="dds__input-text__wrapper">
+                  <input
+                    type="url"
+                    size="255"
+                    class="dds__input-text"
+                    name="text-input-control-name-897251573"
+                    id="text-input-control-897251573"
+                    required=""
+                    placeholder="Insira um link para a logo da empresa"
+                    [(ngModel)] = "requestCadastro.logo"
+                    aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+                  />
+                  <small id="text-input-helper-897251573" class="dds__input-text__helper"></small>
+                  <div id="text-input-error-897251573" class="dds__invalid-feedback">Insira o link da logo</div>
+                </div>
+                <div class="dds__input-text__container">
+                  <label id="text-input-label-gdfgsfd" for="text-input-control-name-897251573">Email <span>*</span></label>
+                  <div class="dds__input-text__wrapper">
+                    <input
+                      type="email"
+                      class="dds__input-text"
+                      name="text-input-control-name-897251573"
+                      id="text-input-control-897251573"
+                      required=""
+                      placeholder="Digite seu E-mail"
+                      [(ngModel)] = "requestCadastro.email"
+                      aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+                    />
+        
+                    <small id="text-input-helper-897251573" class="dds__input-text__helper"></small>
+                    <div id="text-input-error-897251573" class="dds__invalid-feedback">Digite o email da empresa</div>
+                  </div>
+                  <div class="dds__input-text__container">
+                    <label id="text-input-label-gdfgsfd" for="text-input-control-name-jfhgj">Senha <span>*</span></label>
+                    <div class="dds__input-text__wrapper">
+                      <input
+                        type="senha"
+                        class="dds__input-text"
+                        name="text-input-control-name-897251573"
+                        id="text-input-control-897251573"
+                        required=""
+                        placeholder="Digite sua senha"
+                        [(ngModel)] = "requestCadastro.password"
+                        aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+                      />
+          
+                      <small id="text-input-helper-897251573" class="dds__input-text__helper"></small>
+                      <div id="text-input-error-897251573" class="dds__invalid-feedback">Digite a senha da empresa</div>
+                    </div>
+                    <div class="dds__input-text__container">
+                      <label id="text-input-label-gdfgsfd" for="text-input-control-name-jfhgj">Confirmar senha <span>*</span></label>
+                      <div class="dds__input-text__wrapper">
+                        <input
+                          type="senha"
+                          class="dds__input-text"
+                          name="text-input-control-name-897251573"
+                          id="text-input-confirSenha"
+                          required=""
+                          placeholder="Confirme sua senha"
+              
+                          [ngStyle]="{ 'border-color': senhaDiferente ==true ? '#C72C2C' : '#BDBDBD' }"
+                          aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+                        />
+            
+                        <small *ngIf="senhaDiferente" id="text-input-helper-897251573" class="dds__input-text__helper">As senhas não são iguais.</small>
+                        <div id="text-input-error-897251573" class="dds__invalid-feedback">Confirme a senha da empresa</div>
+                      </div>
+            </div>
+          </div>
+              
+          </div>   
+        </div>
+      </div>
+      </div>
+      </fieldset>
+      <div class="buttons">
+        <button class="dds__button dds__button--secondary" type="button" (click)="loginpage()">Voltar</button>
+        <button class="dds__button" type="button" (click)="cadastro()">Salvar</button>
+      </div> 
+    </form>
+
+</section>

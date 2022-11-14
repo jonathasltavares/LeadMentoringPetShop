@@ -8,13 +8,17 @@ import { LoginComponent } from './pages/login/login.component';
 import { LoginFormComponent } from './pages/login/components/login-form/login-form.component';
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
+import { CadastroFormComponent } from './pages/login/components/cadastro-form/cadastro-form.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     LoginComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    CadastroFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
