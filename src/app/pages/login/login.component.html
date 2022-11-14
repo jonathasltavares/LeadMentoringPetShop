@@ -1,26 +1,30 @@
-<section class="login-flex-container">
-    <div class="login-div-top">
-        <div class="login-div-text-top">
-            <p class="login-petshop-text">
-                Petshop
-            </p>
-            <div class="login-line"></div>
-            <p class="login-leadPetshop-text">
-                Lead 
-                Petshop
-            </p>
-            <div class="login-icon-pet-div">
-                <img src="assets/images/login-icon-pet.svg" alt="Imagem de uma pata">
+<div class="div-auth">
+    <section class="login-flex-container">
+        <div class="login-div-top">
+            <div class="login-div-text-top">
+                <p class="login-petshop-text">
+                    Petshop
+                </p>
+                <div class="login-line"></div>
+                <p class="login-leadPetshop-text">
+                    Lead 
+                    Petshop
+                </p>
+                <div class="login-icon-pet-div">
+                    <img src="assets/images/login-icon-pet.svg" alt="Imagem de uma pata">
+                </div>
+            </div>
+            <div class="login-div-copy-logo">
+                <p class="login-copyright">Copyright © 2022, Todos os direitos reservados</p>
+                <div class="login-div-logo">
+                    <img src="assets\images\login-logo-lead.svg" alt="Logo Dell Lead" class="login-logo-lead">
+                    <img src="assets\images\login-logo-dell.svg" alt="Logo Dell Technologies" class="login-logo-dell">
+                </div>
             </div>
         </div>
-        <div class="login-div-copy-logo">
-            <p class="login-copyright">Copyright © 2022, Todos os direitos reservados</p>
-            <div class="login-div-logo">
-                <img src="assets\images\login-logo-lead.svg" alt="Logo Dell Lead" class="login-logo-lead">
-                <img src="assets\images\login-logo-dell.svg" alt="Logo Dell Technologies" class="login-logo-dell">
-            </div>
-        </div>
-    </div>
-</section>
-
-<app-login-form></app-login-form>
+    </section>
+    
+    <app-login-form *ngIf="router.url == '/' || router.url=='/login' "></app-login-form>
+    <app-cadastro-form *ngIf="router.url == '/cadastro'"></app-cadastro-form>
+    
+</div>

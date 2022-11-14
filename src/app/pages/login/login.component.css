@@ -59,3 +59,7 @@
     flex-direction: row;
     gap: 16px;
 }
+
+.div-auth{
+    background-color:#F9F9F9 ;
+}

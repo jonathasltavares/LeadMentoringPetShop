@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RequestCadastro } from '../shared/models/request-cadastro';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ export class PetshopServiceService {
     return this.http.get<any>(this.apiUrl)
   }
 
-  save(petshop: object){
-    return this.http.post<Object>(this.apiUrl, petshop);
+  save(requestCadastro: RequestCadastro){
+    return this.http.post<Object>(this.apiUrl, requestCadastro);
   }
 
   getById(id: string){
