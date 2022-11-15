@@ -18,10 +18,6 @@ export class CadastroFormComponent implements OnInit {
     this.requestCadastro = new RequestCadastro()
   }
 
-  loginpage(){
-    this.router.navigate(['login'])
-  }
-
   cadastro(){
     let confsenha = document.getElementById("text-input-confirSenha") as HTMLInputElement
     if(this.requestCadastro.password != confsenha.value){

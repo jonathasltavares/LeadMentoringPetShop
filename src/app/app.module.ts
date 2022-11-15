@@ -10,6 +10,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 import { CadastroFormComponent } from './pages/login/components/cadastro-form/cadastro-form.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProdDisponiveisComponent } from './pages/home/components/produtos/prod-disponiveis/prod-disponiveis.component';
+import { BreadcrumbsComponent } from './pages/home/components/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './pages/home/home.component';
     LoginComponent,
     LoginFormComponent,
     CadastroFormComponent,
-    HomeComponent
+    HomeComponent,
+    ProdDisponiveisComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
