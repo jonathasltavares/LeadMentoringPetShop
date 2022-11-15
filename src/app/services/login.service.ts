@@ -7,15 +7,15 @@ import { RequestLogin } from '../shared/models/request-login';
   providedIn: 'root'
 })
 export class LoginService {
-  private apiUrl = "http://localhost:8080/PetShop"
+  private apiUrl = "https://lmpetshopapi.herokuapp.com/PetShop"
   infoErradas = new EventEmitter<boolean>()
-  private usuarioAutenticado:boolean = false
+  private usuarioAutenticado:boolean = true
   constructor(private http:HttpClient, private router: Router) { }
 
   login(requestLogin: RequestLogin){  
     this.http.get<any>(`${this.apiUrl}/login?email=${requestLogin.email}&password=${requestLogin.password}`)
     .subscribe((result) =>{
-      window.sessionStorage.setItem('session', `name:${result.name}, logo:${result.logo}`)
+      window.sessionStorage.setItem('session', `"name":"${result.name}", "logo":"${result.logo}"`)
       this.router.navigate(['home'])
       this.usuarioAutenticado = true
       this.infoErradas.emit(false)
