@@ -27,8 +27,5 @@ export class LoginFormComponent implements OnInit {
   login(){
     this.loginService.login(this.requestLogin)
   }
-  ancorCadastro(){
-    this.router.navigate(['cadastro']);
-  }
 }
 

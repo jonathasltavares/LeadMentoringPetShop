@@ -1,0 +1,61 @@
+.dds__card__content{
+    padding-bottom: 0;
+}
+.dds__button{
+    width: 400px;
+    margin-right: 0;
+}
+.dds__card__action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dds__container{
+    display: flex;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    justify-content: center;
+}
+.dds__row{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.dds__md-3{
+    width: 380px;
+    height: 300px;
+}
+.dds__card__header__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #444444;
+}
+.dds__card__header{
+    gap: 20px;
+}
+.dds__card__body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #444444;
+
+    gap: 20px;
+}
+.card_valor{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #444444;
+}

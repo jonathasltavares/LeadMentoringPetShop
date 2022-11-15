@@ -72,3 +72,6 @@ span{
     line-height: 16px;
     color: #444444;
 }
+a{
+    text-decoration: none;
+}

@@ -11,10 +11,10 @@
 
         <nav>
             <div class="nav-div">
-                <a class="nav-item">PRODUTOS</a>
+                <a routerLink="/home/produtos" class="nav-item">PRODUTOS</a>
             </div>
             <div class="nav-div">
-                <a class="nav-item">PETS</a>
+                <a routerLink="/home/pets" class="nav-item">PETS</a>
             </div>
         </nav>
 
@@ -28,3 +28,4 @@
         </div>
     </header>
 </section>
+<app-prod-disponiveis *ngIf="url == '/home/produtos'"></app-prod-disponiveis>
