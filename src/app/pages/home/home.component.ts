@@ -22,9 +22,8 @@ export class HomeComponent implements OnInit {
   getSession(){
     let userstring = window.sessionStorage.getItem('session')
     
-    let user
     if(typeof userstring === 'string'){
-      this.session = JSON.parse(`{"name":"Moitinha PetShop", "logo":"https://cdn.discordapp.com/attachments/860278451890159647/931724711736528926/meugif.gif?width=676&height=676"}`)   
+      this.session = JSON.parse(userstring)
     }
   }
 }
