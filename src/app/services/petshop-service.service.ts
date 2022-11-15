@@ -6,7 +6,7 @@ import { RequestCadastro } from '../shared/models/request-cadastro';
   providedIn: 'root'
 })
 export class PetshopServiceService {
-  private apiUrl = "http://localhost:8080/PetShop"
+  private apiUrl = "https://lmpetshopapi.herokuapp.com/PetShop"
   constructor(private http:HttpClient) { }
   getAll(){
     return this.http.get<any>(this.apiUrl)

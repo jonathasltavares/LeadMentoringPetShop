@@ -1,21 +1,30 @@
 <section class="flexcontainer">
     <header>
-        <div class="login-div-logo">
-            <img src="assets\images\login-logo-lead.svg" alt="Logo Dell Lead" class="login-logo-lead">
-            <img src="assets\images\login-logo-dell.svg" alt="Logo Dell Technologies" class="login-logo-dell">
+        <div class="header-rightcontent">
+            <div class="home-div-logo">
+                <img src="assets\images\login-logo-lead.svg" alt="Logo Dell Lead" class="login-logo-lead">
+                <img src="assets\images\login-logo-dell.svg" alt="Logo Dell Technologies" class="login-logo-dell">
+            </div>
+            <div class="linha-vertical"></div>
+            <p class="nome-petshop">{{session.name}}</p>
         </div>
-        <p>{{session.name}}</p>
 
         <nav>
-            <a>PRODUTOS</a>
-            <a>PETS</a>
+            <div class="nav-div">
+                <a class="nav-item">PRODUTOS</a>
+            </div>
+            <div class="nav-div">
+                <a class="nav-item">PETS</a>
+            </div>
         </nav>
 
         <div class="perfil">
             <p>{{session.name}}</p>
             <div class="perfil-linha-vertical"></div>
-            <img src="{{session.logo}}" alt="">
+        
+            <span class="circle-imagem"><img src="{{session.logo}}" class="imagem-perfil"></span>
+            <img src="\assets\images\Polygon 1.svg" class="logout-img">
+      
         </div>
-        alolo
     </header>
 </section>

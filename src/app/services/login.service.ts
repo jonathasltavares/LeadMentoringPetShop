@@ -7,9 +7,9 @@ import { RequestLogin } from '../shared/models/request-login';
   providedIn: 'root'
 })
 export class LoginService {
-  private apiUrl = "http://localhost:8080/PetShop"
+  private apiUrl = "https://lmpetshopapi.herokuapp.com/PetShop"
   infoErradas = new EventEmitter<boolean>()
-  private usuarioAutenticado:boolean = false
+  private usuarioAutenticado:boolean = true
   constructor(private http:HttpClient, private router: Router) { }
 
   login(requestLogin: RequestLogin){  
