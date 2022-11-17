@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
+import { ProdDisponiveisComponent } from './pages/home/components/produtos/prod-disponiveis/prod-disponiveis.component';
+import { RegistrarProdComponent } from './pages/home/components/produtos/registrar-prod/registrar-prod.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CadastroFormComponent } from './pages/login/components/cadastro-form/cadastro-form.component';
 import { LoginFormComponent } from './pages/login/components/login-form/login-form.component';
@@ -12,11 +14,10 @@ const routes: Routes = [
       { path: 'login', component: LoginFormComponent },
       { path: 'cadastro', component: CadastroFormComponent }]
   },
-  {path: 'home', component: HomeComponent,
+  {path: 'produtos', component: HomeComponent,
     canActivate: [AuthGuard],
     children: [
-      {path: 'produtos', component: HomeComponent},
-      {path: 'pets', component: HomeComponent}
+      {path: 'registrar', component: RegistrarProdComponent},
     ]}];
 
 @NgModule({

@@ -28,4 +28,6 @@
         </div>
     </header>
 </section>
-<app-prod-disponiveis *ngIf="url == '/home/produtos'"></app-prod-disponiveis>
+<app-prod-disponiveis *ngIf="route.url == '/produtos'"></app-prod-disponiveis>
+<app-registrar-prod *ngIf="route.url == '/produtos/registrar'"></app-registrar-prod>
+

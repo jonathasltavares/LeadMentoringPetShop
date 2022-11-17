@@ -1,10 +1,10 @@
 <section class="flex-container">
     <app-breadcrumbs></app-breadcrumbs>
 
-    <div class="titulo">
-        <h1>Produtos Disponíveis</h1>
-        <button class="dds__button dds__button--transactional" type="button">
-            <i class="dds__icon dds__icon--add-cir dds__button__icon--start" aria-hidden="true"></i>
+    <div class="titulo-div"> 
+        <h1>Produtos disponíveis</h1>
+        <button class="dds__button dds__button--transactional" type="button" routerLink="/produtos/registrar" (click)="registrar()">
+            <i class="dds__icon dds__icon--add-cir dds__button__icon--start" aria-hidden="true" ></i>
             ADICIONAR NOVO PRODUTO
         </button>
     </div>
@@ -12,18 +12,18 @@
     <div class="div-cards">
         <div class="dds__container ">
             <div class="dds__row">
-                <div class="dds__md-3">
-                    <div class="dds__card">
+                <div class="dds__md-3" *ngFor="let item of products">
+                    <div class="dds__card" >
                         <div class="dds__card__content">
                             <div class="dds__card__header">                                
-                                <img height="100px" src="https://cdn.discordapp.com/attachments/860278451890159647/931724711736528926/meugif.gif" alt="">
+                                <img height="100px" src={{item.photo}} alt="">
                               <span class="dds__card__header__text">
-                                <h5 class="dds__card__header__title">JONATHAS LUAN PINHEIRO TAVARES</h5>
+                                <h5 class="dds__card__header__title">{{item.name}}</h5>
                               </span>
                             </div>
                             <div class="dds__card__body">
-                              <p>Description text should not exceed more than a few lines.</p>
-                              <span class="card_valor">R$10</span>
+                              <p class="card_description">{{item.description}}</p>
+                              <span class="card_valor">R${{item.price}}</span>
                             </div>
                         </div>
                         <div class="dds__card__action">
