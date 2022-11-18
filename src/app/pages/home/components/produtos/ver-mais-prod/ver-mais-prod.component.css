@@ -80,3 +80,49 @@ button{
     max-width: 444px;
     max-height: 438px;
 }
+#modal-x{
+    cursor: pointer;
+}
+.modal-body{
+    height: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #333333;
+
+}
+.modal-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
+#cancel-modal-button{
+    background-color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #CE1126;
+    width: 90px;
+    height: 40px
+}
+#deletar-modal-button{
+    width: 90px;
+    height: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+}
