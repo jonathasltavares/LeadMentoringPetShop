@@ -15,7 +15,7 @@ h2{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 28px;
 }
 label{
@@ -23,7 +23,7 @@ label{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 }
 .cadastro-form-container{
@@ -48,7 +48,7 @@ input{
 }
 input::placeholder{
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 0.938rem;
     color: #C8C9C7;
 }
 .dds__col--1{
@@ -68,7 +68,7 @@ input::placeholder{
 button{
     width: 160px;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 16px;
 }
@@ -97,7 +97,7 @@ a{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 33px;
     margin-left: 60px;
     margin-right: 60px;

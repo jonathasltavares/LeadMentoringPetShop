@@ -24,7 +24,7 @@
     font-weight: 400;
 }
 .login-petshop-text{
-    font-size: 94px;
+    font-size: 5.875rem;
 }
 .login-line{
     height: 65px;
@@ -33,7 +33,7 @@
     margin-left: 10px;
 }
 .login-leadPetshop-text{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     font-weight:300;
     width: 62px;
@@ -45,7 +45,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight:lighter;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 }
 .login-div-copy-logo{

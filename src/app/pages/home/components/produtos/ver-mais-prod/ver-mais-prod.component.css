@@ -15,7 +15,7 @@ h1{
     font-family: 'Roboto', 'sans-serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 38px;
     color: #444444;
 }
@@ -23,7 +23,7 @@ p{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
 
     color: #444444;
@@ -42,7 +42,7 @@ span{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 38px;
     
     color: #444444;
@@ -59,7 +59,7 @@ button{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -88,7 +88,7 @@ button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 
     color: #333333;
@@ -98,7 +98,7 @@ button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 28px;
 
     color: #333333;
@@ -108,7 +108,7 @@ button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 
     color: #CE1126;
@@ -122,7 +122,7 @@ button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 
 }

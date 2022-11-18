@@ -32,7 +32,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 23px;
 
     color: #444444;
@@ -44,7 +44,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 
     color: #444444;
@@ -55,7 +55,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 23px;
 
     color: #444444;
@@ -65,7 +65,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 33px;
     margin-left: 60px;
     margin-right: 60px;
@@ -83,7 +83,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 0.813rem;
     line-height: 16px;
     text-transform: capitalize;
 
@@ -93,7 +93,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
     
     color: #444444;
@@ -108,7 +108,7 @@
     font-family: 'Roboto', 'sans-serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 23px;
     color: #444444;
 }

@@ -30,7 +30,6 @@ import { VerMaisProdComponent } from './pages/home/components/produtos/ver-mais-
     BreadcrumbsComponent,
     RegistrarProdComponent,
     VerMaisProdComponent
-    
   ],
   imports: [
     BrowserModule,
