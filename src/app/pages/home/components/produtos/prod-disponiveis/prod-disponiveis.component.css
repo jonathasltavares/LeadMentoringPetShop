@@ -15,23 +15,24 @@
     max-width: none;
     margin: 0;
     padding: 0;
-    gap: 10px;
     justify-content: center;
+    align-items: center;
 }
 .dds__row{
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin: 0;
+    margin-bottom: 50px;
 }
 .dds__md-3{
-    width: 380px;
-    height: 300px;
+    width: 376px;
 }
 .dds__card__header__text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 23px;
 
     color: #444444;
@@ -43,7 +44,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
 
     color: #444444;
@@ -54,8 +55,60 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 23px;
 
+    color: #444444;
+}
+
+.titulo-div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 33px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 18px;
+    color: #444444;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dds__button--transactional{
+    width: 250px;
+    height: 40px;
+    background: #6EA204;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 16px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.card_description{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+    
+    color: #444444;
+}
+.div-cards{
+    background: #F9F9F9;
+}
+.card_description{
+    height: 90px;
+}
+.dds__card__header__title{
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 23px;
     color: #444444;
 }

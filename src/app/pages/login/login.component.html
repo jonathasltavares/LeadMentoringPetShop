@@ -24,7 +24,7 @@
         </div>
     </section>
     
-    <app-login-form *ngIf="router.url == '/' || router.url=='/login' "></app-login-form>
-    <app-cadastro-form *ngIf="router.url == '/cadastro'"></app-cadastro-form>
+    <router-outlet></router-outlet>
     
 </div>
+

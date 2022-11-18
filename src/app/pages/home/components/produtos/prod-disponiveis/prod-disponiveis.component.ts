@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductsService } from 'src/app/services/products.service';
+import { SessionService } from 'src/app/services/session.service';
+import { Produtos } from 'src/app/shared/models/produtos';
+import { User } from 'src/app/shared/models/user';
 
 
 @Component({
@@ -8,13 +13,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdDisponiveisComponent implements OnInit {
 
-  constructor() {  
+  public products:Produtos[] = []
+  constructor(private productService: ProductsService, private sessionService: SessionService, private route: Router) {  
   }
 
   ngOnInit(): void {
-    var DDS:any
-    const element = document.getElementById("breadcrumb-id");
-    DDS.ComponentName(element);
+    this.getByPetshop()
   }
 
+  getByPetshop(){
+    let session: User = this.sessionService.getSession()
+    this.productService.getByPetshop(session.id)
+      .subscribe(result =>{
+        this.products = result.content
+      })
+  }
+  registrar(){
+    console.log(this.route.url)
+    this.route.navigate(['/home/produtos/registrar'])
+    
+  }
+  verMais(id:string){
+    this.route.navigate([`/home/produtos/detalhes/${id}`])
+  }
 }

@@ -1,0 +1,37 @@
+<div class="main">
+    <app-breadcrumbs></app-breadcrumbs>
+<section class="flexcontainer">
+    <div class="prod-img">
+        <img src="{{produto.photo}}" alt="">
+    </div>
+    <div class="prod-info">
+        <h1>{{produto.name}}</h1>
+        <p>{{produto.description}}</p>
+        <span>R${{produto.price}}</span>
+        <div class="buttons">
+            <button (click)="openFormModal()" class="dds__button dds__button--destructive" type="button"><i class="dds__icon dds__icon--trash dds__button__icon--start" aria-hidden="true"></i>Deletar produto</button>
+            <button class="dds__button" type="button"><i class="dds__icon dds__icon--pencil dds__button__icon--start" aria-hidden="true"></i>Editar produto</button>
+        </div>     
+    </div>
+</section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Confirmação de exclusão</h5>
+        <i id="modal-x" class="dds__icon dds__icon--close-x dds__button__icon--start" aria-hidden="true" data-dismiss="modal" aria-label="Close"></i>
+      </div>
+      <div class="modal-body">
+        Você tem certeza que deseja excluir este item permanentemente?
+      </div>
+      <div class="dds__modal__footer">
+        <button class="dds__button dds__button--destructive" type="button" id="cancel-modal-button" data-dismiss="modal">Cancel</button>
+        <button class="dds__button dds__button--destructive" type="button"id="deletar-modal-button" (click)="deletarProduto(produto.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->

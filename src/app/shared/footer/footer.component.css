@@ -22,7 +22,7 @@ footer{
     gap: 5px;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .footer-text1{
     font-style: normal;
