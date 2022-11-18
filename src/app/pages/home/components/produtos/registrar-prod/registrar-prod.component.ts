@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { sequenceEqual } from 'rxjs';
 import { ProductsService } from 'src/app/services/products.service';
 import { SessionService } from 'src/app/services/session.service';
-import { Produtos } from 'src/app/shared/models/produtos';
 import { RequestProducts } from 'src/app/shared/models/request-products';
 import { User } from 'src/app/shared/models/user';
 
@@ -14,7 +14,7 @@ import { User } from 'src/app/shared/models/user';
 export class RegistrarProdComponent implements OnInit {
   public requestProduto!:RequestProducts
   public session!:User
-  constructor(private productsService:ProductsService, private sessionService: SessionService) {
+  constructor(private productsService:ProductsService, private sessionService: SessionService, private route:Router) {
     this.requestProduto= new RequestProducts()
    }
 
@@ -25,11 +25,11 @@ export class RegistrarProdComponent implements OnInit {
 
   cadastrarProduto(){
     this.requestProduto.petshop = {"id":this.session.id}
-    console.log(this.requestProduto)
     this.productsService.save(this.requestProduto)
     .subscribe(
       resultado =>{
         window.alert("Produto cadastrado")
+        this.route.navigate(['/home/produtos'])
       }, erro =>{
         console.log(erro)
       }

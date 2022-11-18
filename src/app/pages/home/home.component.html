@@ -10,10 +10,10 @@
         </div>
 
         <nav>
-            <div class="nav-div">
+            <div class="nav-div" [ngStyle]="{backgroundColor: rota == 'produtos'? '#00447C': ''}">
                 <a routerLink="/home/produtos" class="nav-item">PRODUTOS</a>
             </div>
-            <div class="nav-div">
+            <div class="nav-div" [ngStyle]="{backgroundColor: rota == 'pets'? '#00447C': ''}">
                 <a routerLink="/home/pets" class="nav-item">PETS</a>
             </div>
         </nav>
@@ -28,6 +28,5 @@
         </div>
     </header>
 </section>
-<app-prod-disponiveis *ngIf="route.url == '/produtos'"></app-prod-disponiveis>
-<app-registrar-prod *ngIf="route.url == '/produtos/registrar'"></app-registrar-prod>
 
+<router-outlet>

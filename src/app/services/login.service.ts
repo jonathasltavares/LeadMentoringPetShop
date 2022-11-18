@@ -16,7 +16,7 @@ export class LoginService {
     this.http.get<any>(`${this.apiUrl}/login?email=${requestLogin.email}&password=${requestLogin.password}`)
     .subscribe((result) =>{
       window.sessionStorage.setItem('session', `{"name":"${result.name}", "logo":"${result.logo}", "id":"${result.id}"}`)
-      this.router.navigate(['produtos'])
+      this.router.navigate(['home'])
       this.usuarioAutenticado = true
       this.infoErradas.emit(false)
       

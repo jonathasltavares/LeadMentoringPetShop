@@ -1,0 +1,18 @@
+<div class="main">
+    <app-breadcrumbs></app-breadcrumbs>
+<section class="flexcontainer">
+    <div class="prod-img">
+        <img src="{{produto.photo}}" alt="">
+    </div>
+    <div class="prod-info">
+        <h1>{{produto.name}}</h1>
+        <p>{{produto.description}}</p>
+        <span>R${{produto.price}}</span>
+        <div class="buttons">
+            <button (click)="deletarProduto(produto.id)" class="dds__button dds__button--destructive" type="button"><i class="dds__icon dds__icon--trash dds__button__icon--start" aria-hidden="true"></i>Deletar produto</button>
+            <button class="dds__button" type="button"><i class="dds__icon dds__icon--pencil dds__button__icon--start" aria-hidden="true"></i>Editar produto</button>
+        </div>     
+    </div>
+</section>
+</div>
+

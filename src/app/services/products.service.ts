@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Produtos } from '../shared/models/produtos';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class ProductsService {
   }
 
   getById(id: string){
-    return this.http.get(`${this.apiUrl}/${id}`)
+    return this.http.get<Produtos>(`${this.apiUrl}/${id}`)
   }
 
   deleteById(id: string){

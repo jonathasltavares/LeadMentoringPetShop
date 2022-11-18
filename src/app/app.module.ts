@@ -13,6 +13,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProdDisponiveisComponent } from './pages/home/components/produtos/prod-disponiveis/prod-disponiveis.component';
 import { BreadcrumbsComponent } from './pages/home/components/breadcrumbs/breadcrumbs.component';
 import { RegistrarProdComponent } from './pages/home/components/produtos/registrar-prod/registrar-prod.component';
+import { VerMaisProdComponent } from './pages/home/components/produtos/ver-mais-prod/ver-mais-prod.component';
+
 
 
 
@@ -27,6 +29,7 @@ import { RegistrarProdComponent } from './pages/home/components/produtos/registr
     ProdDisponiveisComponent,
     BreadcrumbsComponent,
     RegistrarProdComponent,
+    VerMaisProdComponent
     
   ],
   imports: [

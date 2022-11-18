@@ -30,7 +30,10 @@ export class ProdDisponiveisComponent implements OnInit {
   }
   registrar(){
     console.log(this.route.url)
-    this.route.navigate(['produtos/registrar'])
+    this.route.navigate(['/home/produtos/registrar'])
     
+  }
+  verMais(id:string){
+    this.route.navigate([`/home/produtos/detalhes/${id}`])
   }
 }

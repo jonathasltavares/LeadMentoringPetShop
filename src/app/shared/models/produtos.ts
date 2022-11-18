@@ -3,5 +3,5 @@ export interface Produtos {
     description:string
     price:number
     photo:string
-    
+    id:string
 }

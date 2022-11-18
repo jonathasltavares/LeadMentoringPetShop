@@ -3,7 +3,7 @@
 
     <div class="titulo-div"> 
         <h1>Produtos disponíveis</h1>
-        <button class="dds__button dds__button--transactional" type="button" routerLink="/produtos/registrar" (click)="registrar()">
+        <button class="dds__button dds__button--transactional" type="button" (click)="registrar()">
             <i class="dds__icon dds__icon--add-cir dds__button__icon--start" aria-hidden="true" ></i>
             ADICIONAR NOVO PRODUTO
         </button>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="dds__card__action">
-                            <button class="dds__button" type="button" aria-describedby="card  Primary">Ver mais</button>
+                            <button class="dds__button" type="button" aria-describedby="card  Primary" (click)="verMais(item.id)">Ver mais</button>
                           </div>
                     </div>
                 </div>
