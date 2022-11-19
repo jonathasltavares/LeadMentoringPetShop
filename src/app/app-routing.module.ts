@@ -29,10 +29,10 @@ const routes: Routes = [
         pathMatch: 'full',
         redirectTo: 'produtos'
       },
-      {path: 'produtos', component: ProdDisponiveisComponent},
-      {path: 'produtos/registrar', component: RegistrarProdComponent},
-      {path: 'produtos/detalhes/:id', component: VerMaisProdComponent},
-      {path: 'produtos/editar/:id', component: EditarProdComponent}
+      {path: 'produtos', component: ProdDisponiveisComponent, data: { titulo: 'Produtos' },},
+      {path: 'produtos/registrar', component: RegistrarProdComponent,data: { titulo: 'Registrar produto' },},
+      {path: 'produtos/detalhes/:id', component: VerMaisProdComponent,data: { titulo: ':id' }},
+      {path: 'produtos/editar/:id', component: EditarProdComponent,data: { titulo: 'Editar produto' }}
     ]}];
 
 @NgModule({

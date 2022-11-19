@@ -1,1 +1,8 @@
-
+<nav  data-dds="breadcrumb" aria-label="breadcrumb">
+    <ol id="list-6" class="dds__breadcrumb">
+      <li class="dds__breadcrumb__item"><a 
+        [ngStyle]="{ 'color': produtos==true ? '#0076CE' : '#444444' }"
+        routerLink="/home/produtos/">Produtos</a></li>
+      <li id="breadcrumbItem" class="dds__breadcrumb__item">{{breadcrumb}}</li>
+    </ol>
+</nav>
