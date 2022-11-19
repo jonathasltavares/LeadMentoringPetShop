@@ -10,7 +10,7 @@
         <span>R${{produto.price}}</span>
         <div class="buttons">
             <button (click)="openFormModal()" class="dds__button dds__button--destructive" type="button"><i class="dds__icon dds__icon--trash dds__button__icon--start" aria-hidden="true"></i>Deletar produto</button>
-            <button class="dds__button" type="button"><i class="dds__icon dds__icon--pencil dds__button__icon--start" aria-hidden="true"></i>Editar produto</button>
+            <button (click)="editarNav(produto.id)" class="dds__button" type="button"><i class="dds__icon dds__icon--pencil dds__button__icon--start" aria-hidden="true"></i>Editar produto</button>
         </div>     
     </div>
 </section>

@@ -48,4 +48,7 @@ export class VerMaisProdComponent {
     this.formModal.show();
   }
   
+  editarNav(id:string){
+    this.route.navigate([`/home/produtos/editar/${id}`])
+  }
 }
