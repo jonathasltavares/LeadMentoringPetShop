@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from 'src/app/services/products.service';
 import { Produtos } from 'src/app/shared/models/produtos';
@@ -12,15 +13,18 @@ declare var window: any;
 export class VerMaisProdComponent {
   public produto!:Produtos
   formModal: any;
-  constructor(private produtoService: ProductsService,private activatedRoute : ActivatedRoute, private route:Router){
+  public id!:string
+  constructor(private produtoService: ProductsService,private activatedRoute : ActivatedRoute, private route:Router, private titleService: Title){
   }
 
   ngOnInit(): void {
     let id = this.activatedRoute.snapshot.paramMap.get("id");
     if(typeof id === 'string'){
+      this.id = id
       this.produtoService.getById(id)
     .subscribe(result =>{
       this.produto = result
+      this.titleService.setTitle(this.produto.name)
     })
     }
 

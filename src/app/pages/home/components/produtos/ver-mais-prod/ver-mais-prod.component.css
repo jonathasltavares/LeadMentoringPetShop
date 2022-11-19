@@ -84,11 +84,14 @@ button{
     cursor: pointer;
 }
 .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'sans-serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 0.880rem;
     line-height: 16px;
 
     color: #333333;
@@ -100,8 +103,8 @@ button{
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 28px;
-
     color: #333333;
+    margin-left: 16px;
 }
 #cancel-modal-button{
     background-color: white;
@@ -125,4 +128,10 @@ button{
     font-size: 0.875rem;
     line-height: 16px;
 
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin: 5px;
 }
