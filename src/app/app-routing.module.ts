@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
+import { EditarProdComponent } from './pages/home/components/produtos/editar-prod/editar-prod.component';
 import { ProdDisponiveisComponent } from './pages/home/components/produtos/prod-disponiveis/prod-disponiveis.component';
 import { RegistrarProdComponent } from './pages/home/components/produtos/registrar-prod/registrar-prod.component';
 import { VerMaisProdComponent } from './pages/home/components/produtos/ver-mais-prod/ver-mais-prod.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
       {path: 'produtos', component: ProdDisponiveisComponent},
       {path: 'produtos/registrar', component: RegistrarProdComponent},
       {path: 'produtos/detalhes/:id', component: VerMaisProdComponent},
+      {path: 'produtos/editar/:id', component: EditarProdComponent}
     ]}];
 
 @NgModule({

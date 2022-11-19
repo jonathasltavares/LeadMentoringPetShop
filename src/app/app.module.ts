@@ -14,6 +14,8 @@ import { ProdDisponiveisComponent } from './pages/home/components/produtos/prod-
 import { BreadcrumbsComponent } from './pages/home/components/breadcrumbs/breadcrumbs.component';
 import { RegistrarProdComponent } from './pages/home/components/produtos/registrar-prod/registrar-prod.component';
 import { VerMaisProdComponent } from './pages/home/components/produtos/ver-mais-prod/ver-mais-prod.component';
+import { EditarProdComponent } from './pages/home/components/produtos/editar-prod/editar-prod.component';
+
 
 
 
@@ -29,7 +31,8 @@ import { VerMaisProdComponent } from './pages/home/components/produtos/ver-mais-
     ProdDisponiveisComponent,
     BreadcrumbsComponent,
     RegistrarProdComponent,
-    VerMaisProdComponent
+    VerMaisProdComponent,
+    EditarProdComponent
   ],
   imports: [
     BrowserModule,

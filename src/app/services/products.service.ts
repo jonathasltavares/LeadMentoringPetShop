@@ -24,8 +24,8 @@ export class ProductsService {
     return this.http.delete(`${this.apiUrl}/${id}`)
   }
 
-  editById(id: string, petshop:object){
-    return this.http.put(`${this.apiUrl}/${id}`, petshop) 
+  editById(id: string, product:object){
+    return this.http.put(`${this.apiUrl}/${id}`, product)
   }
 
   getByPetshop(id:string){
