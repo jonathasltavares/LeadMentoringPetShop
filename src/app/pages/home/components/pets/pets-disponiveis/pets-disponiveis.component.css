@@ -39,7 +39,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .dds__card__header{
     gap: 20px;
@@ -50,10 +49,8 @@
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 16px;
-
-    color: #444444;
-
     gap: 20px;
+    color: #444444;
 }
 .card_valor{
     font-family: 'Roboto';
@@ -106,7 +103,7 @@
     background: #F9F9F9;
 }
 .card_description{
-    height: 90px;
+    height: fit-content;
 }
 .dds__card__header__title{
     font-family: 'Roboto', 'sans-serif';

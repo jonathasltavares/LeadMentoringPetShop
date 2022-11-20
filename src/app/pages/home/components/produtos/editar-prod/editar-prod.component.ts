@@ -14,6 +14,7 @@ import { User } from 'src/app/shared/models/user';
 export class EditarProdComponent {
   public requestProduto!:RequestProducts
   public session!:User
+  public page = "prod"
   public id = this.activatedRoute.snapshot.paramMap.get("id");
   constructor(private cd: ChangeDetectorRef,private sessionService:SessionService,private produtoService:ProductsService,private activatedRoute : ActivatedRoute, private route:Router){
     this.session = new User()
