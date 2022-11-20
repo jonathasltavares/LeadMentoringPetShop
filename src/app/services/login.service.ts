@@ -9,7 +9,7 @@ import { RequestLogin } from '../shared/models/request-login';
 export class LoginService {
   private apiUrl = "https://lmpetshopapi.herokuapp.com/PetShop"
   infoErradas = new EventEmitter<boolean>()
-  private usuarioAutenticado:boolean = true
+  private usuarioAutenticado:boolean = false
   constructor(private http:HttpClient, private router: Router) { }
 
   login(requestLogin: RequestLogin){  
@@ -26,6 +26,11 @@ export class LoginService {
       this.usuarioAutenticado = false
       this.infoErradas.emit(true)
     })
+  }
+  logOut(){
+    this.usuarioAutenticado = false
+    window.sessionStorage.clear()
+    this.router.navigate(['login'])
   }
   usuarioEstaAutenticado(){
     return this.usuarioAutenticado
