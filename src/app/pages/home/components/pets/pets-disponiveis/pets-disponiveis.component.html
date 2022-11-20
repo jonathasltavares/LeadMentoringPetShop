@@ -2,27 +2,29 @@
     <app-breadcrumbs [page]="page"></app-breadcrumbs>
 
     <div class="titulo-div"> 
-        <h1>Produtos disponíveis</h1>
+        <h1>Pets disponíveis</h1>
         <button class="dds__button dds__button--transactional" type="button" (click)="registrar()">
             <i class="dds__icon dds__icon--add-cir dds__button__icon--start" aria-hidden="true" ></i>
-            ADICIONAR NOVO PRODUTO
+            ADICIONAR NOVO PET
         </button>
     </div>
 
     <div class="div-cards">
         <div class="dds__container ">
             <div class="dds__row">
-                <div class="dds__md-3" *ngFor="let item of products">
+                <div class="dds__md-3" *ngFor="let item of pets">
                     <div class="dds__card" >
                         <div class="dds__card__content">
                             <div class="dds__card__header">                                
-                                <img height="100px" src={{item.photo}} alt="">
+                                <img height="80px" src={{item.photo}} alt="">
                               <span class="dds__card__header__text">
                                 <h5 class="dds__card__header__title">{{item.name}}</h5>
                               </span>
                             </div>
                             <div class="dds__card__body">
                               <p class="card_description">{{item.description}}</p>
+                              <p class="card_description">Gênero: {{item.gender}}</p>
+                              <p class="card_description">Idade: {{item.age}}</p>
                               <span class="card_valor">R${{item.price}}</span>
                             </div>
                         </div>
@@ -36,4 +38,5 @@
         </div>
     </div>
 </section>
+
 

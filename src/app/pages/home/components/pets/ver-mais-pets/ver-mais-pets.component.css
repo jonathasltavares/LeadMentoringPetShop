@@ -1,0 +1,137 @@
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    min-height: 550px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+    display: flex;
+    height: 510px;
+    gap: 100px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #444444;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+
+    color: #444444;
+    width: 413px;
+    height: 95px;
+}
+img {
+    mix-blend-mode: multiply;
+    max-width: 444px;
+    max-height: 438px;
+
+    min-width: 300px;
+    min-height: 300px;
+}
+span{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    
+    color: #444444;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    width: 141px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.prod-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    width: 413px;
+    height: 321px;
+}
+.prod-img{
+    max-width: 444px;
+    max-height: 438px;
+}
+#modal-x{
+    cursor: pointer;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.880rem;
+    line-height: 16px;
+
+    color: #333333;
+
+}
+.modal-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: #333333;
+    margin-left: 16px;
+}
+#cancel-modal-button{
+    background-color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+
+    color: #CE1126;
+    width: 90px;
+    height: 40px
+}
+#deletar-modal-button{
+    width: 90px;
+    height: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin: 5px;
+}

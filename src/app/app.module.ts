@@ -15,6 +15,10 @@ import { BreadcrumbsComponent } from './pages/home/components/breadcrumbs/breadc
 import { RegistrarProdComponent } from './pages/home/components/produtos/registrar-prod/registrar-prod.component';
 import { VerMaisProdComponent } from './pages/home/components/produtos/ver-mais-prod/ver-mais-prod.component';
 import { EditarProdComponent } from './pages/home/components/produtos/editar-prod/editar-prod.component';
+import { PetsDisponiveisComponent } from './pages/home/components/pets/pets-disponiveis/pets-disponiveis.component';
+import { EditarPetsComponent } from './pages/home/components/pets/editar-pets/editar-pets.component';
+import { RegistrarPetsComponent } from './pages/home/components/pets/registrar-pets/registrar-pets.component';
+import { VerMaisPetsComponent } from './pages/home/components/pets/ver-mais-pets/ver-mais-pets.component';
 
 
 
@@ -32,7 +36,11 @@ import { EditarProdComponent } from './pages/home/components/produtos/editar-pro
     BreadcrumbsComponent,
     RegistrarProdComponent,
     VerMaisProdComponent,
-    EditarProdComponent
+    EditarProdComponent,
+    PetsDisponiveisComponent,
+    EditarPetsComponent,
+    RegistrarPetsComponent,
+    VerMaisPetsComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ import { User } from 'src/app/shared/models/user';
 export class RegistrarProdComponent implements OnInit {
   public requestProduto!:RequestProducts
   public session!:User
+  public page = "prod"
   constructor(private productsService:ProductsService, private sessionService: SessionService, private route:Router) {
     this.requestProduto= new RequestProducts()
    }

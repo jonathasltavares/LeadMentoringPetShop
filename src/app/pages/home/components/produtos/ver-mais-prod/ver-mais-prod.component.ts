@@ -14,6 +14,7 @@ export class VerMaisProdComponent {
   public produto!:Produtos
   formModal: any;
   public id!:string
+  public page = "prod"
   constructor(private produtoService: ProductsService,private activatedRoute : ActivatedRoute, private route:Router, private titleService: Title){
   }
 

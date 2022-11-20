@@ -14,6 +14,7 @@ import { User } from 'src/app/shared/models/user';
 export class ProdDisponiveisComponent implements OnInit {
 
   public products:Produtos[] = []
+  public page = "prod"
   constructor(private productService: ProductsService, private sessionService: SessionService, private route: Router) {  
   }
 
