@@ -19,6 +19,7 @@ import { PetsDisponiveisComponent } from './pages/home/components/pets/pets-disp
 import { EditarPetsComponent } from './pages/home/components/pets/editar-pets/editar-pets.component';
 import { RegistrarPetsComponent } from './pages/home/components/pets/registrar-pets/registrar-pets.component';
 import { VerMaisPetsComponent } from './pages/home/components/pets/ver-mais-pets/ver-mais-pets.component';
+import { AccessibilityBarComponent } from './shared/accessibility-bar/accessibility-bar.component';
 
 
 
@@ -40,7 +41,8 @@ import { VerMaisPetsComponent } from './pages/home/components/pets/ver-mais-pets
     PetsDisponiveisComponent,
     EditarPetsComponent,
     RegistrarPetsComponent,
-    VerMaisPetsComponent
+    VerMaisPetsComponent,
+    AccessibilityBarComponent
   ],
   imports: [
     BrowserModule,
