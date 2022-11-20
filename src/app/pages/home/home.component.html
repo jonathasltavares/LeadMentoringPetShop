@@ -1,32 +1,72 @@
 <section class="flexcontainer">
-    <header>
-        <div class="header-rightcontent">
-            <div class="home-div-logo">
-                <img src="assets\images\login-logo-lead.svg" alt="Logo Dell Lead" class="login-logo-lead">
-                <img src="assets\images\login-logo-dell.svg" alt="Logo Dell Technologies" class="login-logo-dell">
-            </div>
-            <div class="linha-vertical"></div>
-            <p class="nome-petshop">{{session.name}}</p>
-        </div>
+  <header>
+    <div class="header-rightcontent">
+      <div class="home-div-logo">
+        <img
+          src="assets\images\login-logo-lead.svg"
+          alt="Logo Dell Lead"
+          class="login-logo-lead"
+        />
+        <img
+          src="assets\images\login-logo-dell.svg"
+          alt="Logo Dell Technologies"
+          class="login-logo-dell"
+        />
+      </div>
+      <div class="linha-vertical"></div>
+      <p class="nome-petshop">{{ session.name }}</p>
+    </div>
 
-        <nav>
-            <div class="nav-div" [ngStyle]="{backgroundColor: rota == 'produtos'? '#00447C': ''}">
-                <a routerLink="/home/produtos" class="nav-item">PRODUTOS</a>
-            </div>
-            <div class="nav-div" [ngStyle]="{backgroundColor: rota == 'pets'? '#00447C': ''}">
-                <a routerLink="/home/pets" class="nav-item">PETS</a>
-            </div>
-        </nav>
+    <nav>
+      <div
+        class="nav-div"
+        [ngStyle]="{ backgroundColor: rota == 'produtos' ? '#00447C' : '' }"
+      >
+        <a routerLink="/home/produtos" class="nav-item">PRODUTOS</a>
+      </div>
+      <div
+        class="nav-div"
+        [ngStyle]="{ backgroundColor: rota == 'pets' ? '#00447C' : '' }"
+      >
+        <a routerLink="/home/pets" class="nav-item">PETS</a>
+      </div>
+    </nav>
 
-        <div class="perfil">
-            <p>{{session.name}}</p>
-            <div class="perfil-linha-vertical"></div>
-        
-            <span class="circle-imagem"><img src="{{session.logo}}" class="imagem-perfil"></span>
-            <img src="\assets\images\Polygon 1.svg" class="logout-img">
-      
+    <div class="perfil">
+      <p>{{ session.name }}</p>
+      <div class="perfil-linha-vertical"></div>
+
+      <span class="circle-imagem"
+        ><img src="{{ session.logo }}" class="imagem-perfil"
+      /></span>
+      <div class="col-12">
+        <div class="dropleft">
+          <img
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            id="action-menu-trigger-713878227"
+            src="\assets\images\Polygon 1.svg"
+          />
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dds__action-menu__link" role="none">
+              <a
+                (click)="logOut()"
+                target="_blank"
+                role="menuitem"
+                tabindex="-1"
+                aria-disabled="false"
+                style="text-decoration-style: none; color: black;"
+              >
+              <i class="dds__icon dds__icon--log-out"></i>
+                <span>Log out</span>
+              </a>
+            </li>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 </section>
 
-<router-outlet>
+<router-outlet> </router-outlet>
