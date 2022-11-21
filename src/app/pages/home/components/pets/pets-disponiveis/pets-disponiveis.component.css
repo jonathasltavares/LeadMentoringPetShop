@@ -1,0 +1,119 @@
+.dds__card__content{
+    padding-bottom: 0;
+}
+.dds__button{
+    width: 400px;
+    margin-right: 0;
+}
+.dds__card__action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dds__container{
+    display: flex;
+    max-width: none;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.dds__row{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.dds__md-3{
+    width: 376px;
+}
+.dds__card__header__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 23px;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dds__card__header{
+    gap: 20px;
+}
+.dds__card__body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+    gap: 20px;
+    color: #444444;
+}
+.card_valor{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 23px;
+
+    color: #444444;
+}
+
+.titulo-div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 33px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 18px;
+    color: #444444;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dds__button--transactional{
+    width: 250px;
+    height: 40px;
+    background: #6EA204;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 16px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.card_description{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+    
+    color: #444444;
+}
+.div-cards{
+    background: #F9F9F9;
+}
+.card_description{
+    height: fit-content;
+}
+.dds__card__header__title{
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 23px;
+    color: #444444;
+    text-transform: uppercase;
+}
+.dds__card__header{
+    gap: 5px;
+}

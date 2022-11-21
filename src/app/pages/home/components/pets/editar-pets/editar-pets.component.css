@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.cadastro-titulos{
+    display: flex;
+    justify-content: baseline;
+    background-color: #F9F9F9;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 26px;
+    gap: 20px;
+}
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 28px;
+}
+label{
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+}
+.cadastro-form-container{
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    height: 940px;
+}
+.dds__form.dds__container{
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+}
+input{
+    width: 1200px;
+    height: 40px;
+    border-style: solid;
+    border-color: #C8C9C7;
+}
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.938rem;
+    color: #C8C9C7;
+}
+.dds__col--1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1200px;
+}
+
+.buttons{
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+button{
+    width: 160px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 16px;
+}
+span{
+    color: red;
+}
+.dds__input-text__helper{
+    height: min-content;
+    margin-bottom: 0;
+}
+
+.dds__text-area__wrapper{
+    width: 1200px;
+    height: 200px;
+}
+textarea{
+    resize: none;
+    height: 200px;
+    border-style: solid;
+    border-color: #C8C9C7;
+}
+a{
+    text-decoration: none;
+}
+.titulo-div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 33px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 18px;
+    color: #444444;
+    display: flex;
+    flex-direction: row;
+   gap: 10px;
+}
+.flexcontainer{
+    margin-bottom: 50px;
+}
+
+small{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #444444;
+}

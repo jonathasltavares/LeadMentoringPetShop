@@ -5,23 +5,54 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## [LEAD MENTORING] - Petshop
+Esse projeto foi proposto pelo Christian Castro, mentor do programa Lead Mentoring, e consistia na criação de uma aplicação FullStack para Petshops. 
 
-## Code scaffolding
+## Tecnologias 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Tecnologias usadas nesse projeto:
 
-## Build
+* Angular 
+* DDS - Dell Design System
+* Bootstrap
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Páginas  
 
-## Running unit tests
+### 1 - Login
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Homepage image](/src/assets/README/login.png)
 
-## Running end-to-end tests
+### 2 - Cadastro
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Homepage image](/src/assets/README/cadastro.png)
 
-## Further help
+### 3 - Home - Produtos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Homepage image](/src/assets/README/produtos.png)
+
+
+### 4 - Produtos - Registrar
+
+![Login](/src/assets/README/registrarprod.png)
+
+
+### 5 - Produtos - Ver mais
+
+![Sign up](/src/assets/README/vermaisProd.png)
+
+
+### 6 - Home - Pets
+
+![Dashboard](/src/assets/README/pets.png)
+
+
+## Links
+
+  <a href="https://github.com/jonathasltavares/LeadMentoringPetShopAPI" target="_blank" rel="noopener noreferrer">API</a><br>
+  <a href="https://leadmentoringvalorantproject.vercel.app" target="_blank" rel="noopener noreferrer">Deploy</a>
+  
+
+## Authors
+
+  <a href="https://github.com/jonathasltavares" target="_blank" rel="noopener noreferrer">Jonathas Luan</a>  
+  <a href="https://github.com/CCastro01" target="_blank" rel="noopener noreferrer">Christian Castro</a>  

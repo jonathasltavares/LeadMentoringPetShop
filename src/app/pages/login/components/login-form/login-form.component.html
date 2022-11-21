@@ -1,0 +1,53 @@
+<div class="incorrectinfo" *ngIf="infoErrada">
+  <img src="assets\images\dds__close-cir 1.svg" alt="">
+  <p class="pIncorrectInfo">E-mail ou senha estão incorretos. Por favor, tente novamente.</p>
+</div>
+<section class="login-form-container">
+  <form data-dds="form" class="dds__form dds__container">
+    <fieldset class="dds__form__section">
+      <div class="dds__row">
+        <div class="dds__col--1 dds__col--sm-3">
+          <div class="dds__input-text__container">
+            <label id="text-input-label-446747117" for="text-input-control-name-446747117">E-mail</label>
+            <div class="dds__input-text__wrapper">
+              <input
+                type="text"
+                class="dds__input-text"
+                name="text-input-control-name-446747117"
+                id="text-input-email"
+                required=""
+                placeholder="Digite seu E-mail"
+                [(ngModel)] = requestLogin.email
+                aria-labelledby="text-input-label-446747117 text-input-helper-446747117"
+              />
+  
+              <small id="text-input-helper-446747117" class="dds__input-text__helper"></small>
+              <div id="text-input-error-446747117" class="dds__invalid-feedback">Enter a first name to continue</div>
+            </div>
+          </div>
+  
+          <div class="dds__input-text__container">
+            <label id="text-input-label-897251573" for="text-input-control-name-897251573">Senha</label>
+            <div class="dds__input-text__wrapper">
+              <input
+                type="password"
+                class="dds__input-text"
+                name="text-input-control-name-897251573"
+                id="text-input-control-897251573"
+                required=""
+                placeholder="Digite sua senha"
+                [(ngModel)] = requestLogin.password
+                aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+              />
+  
+              <small id="text-input-helper-897251573" class="dds__input-text__helper"></small>
+              <div id="text-input-error-897251573" class="dds__invalid-feedback">Enter a last name to continue</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <button class="dds__button" type="button" (click)="login()">LOGIN</button>
+    <p class="possuiconta">Não possui conta? <a routerLink="/cadastro"><span>Criar conta</span></a></p>
+  </form>
+</section>

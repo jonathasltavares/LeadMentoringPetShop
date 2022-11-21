@@ -1,0 +1,13 @@
+<nav  data-dds="breadcrumb" aria-label="breadcrumb">
+    <ol id="list-6" class="dds__breadcrumb">
+      <li *ngIf="page == 'prod' || page == undefined" class="dds__breadcrumb__item"><a 
+        [ngStyle]="{ 'color': produtos==true ? '#0076CE' : '#444444' }"
+         routerLink="/home/produtos/">Produtos</a>
+        </li>
+      <li *ngIf="page == 'pet' || page == undefined" class="dds__breadcrumb__item"><a 
+        [ngStyle]="{ 'color': produtos==true ? '#0076CE' : '#444444' }"
+         routerLink="/home/pets/">Pets</a>
+        </li>
+      <li id="breadcrumbItem" class="dds__breadcrumb__item">{{breadcrumb}}</li>
+    </ol>
+</nav>

@@ -1,0 +1,25 @@
+a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+    text-decoration: none;
+
+    
+}
+#breadcrumbItem{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+    text-decoration-line: underline;
+
+    color: #0076CE;
+}
+
+nav{
+    margin: 20px;
+    margin-left: 56px;
+}

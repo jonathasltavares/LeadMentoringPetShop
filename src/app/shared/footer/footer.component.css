@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+footer{
+    width: 100%;
+    height: fit-content;
+    background: #00447C;
+}
+
+.footer-flex-container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.footer-div-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+}
+.footer-text1{
+    font-style: normal;
+    font-weight: 400;
+}
+.footer-text2{
+    font-weight:lighter;
+}

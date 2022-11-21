@@ -1,0 +1,90 @@
+<section class="flexcontainer">
+  <app-breadcrumbs [page]="page"></app-breadcrumbs>
+  <div class="titulo-div"> 
+    <a routerLink="/home/produtos"><img src="assets\images\dds__arrow-cir-left 1.svg" alt=""></a><h1>Registrar produto</h1>
+</div>
+<section class="cadastro-form-container">
+    <form data-dds="form" class="dds__form dds__container">
+      <fieldset class="dds__form__section">
+        <div class="dds__row">
+          <div class="dds__col--1 dds__col--sm-3">
+            <div class="dds__input-text__container">
+              <label id="text-input-label-446747117" for="text-input-control-nomedaempresa">Nome do produto <span>*</span></label>
+              <div class="dds__input-text__wrapper">
+                <input
+                    type="text"
+                    class="dds__input-text"
+                    name="text-input-control-name-446747117"
+                    id="text-input-nome-produto"
+                    required=""
+                    placeholder="Nome do produto"
+                    [(ngModel)] = "requestProduto.name"
+                    aria-labelledby="text-input-label-446747117 text-input-helper-446747117"
+                  />
+              <div id="text-input-error-446747117" class="dds__invalid-feedback">Insira o nome do produto</div>
+            </div>
+            </div>
+          
+              <div class="dds__input-text__container">
+                <label id="text-input-label-897251573" for="text-input-control-linkdalogo">Link da foto do produto <span>*</span></label>
+                <div class="dds__input-text__wrapper">
+                  <input
+                    type="url"
+                    size="255"
+                    class="dds__input-text"
+                    name="text-input-control-name-897251573"
+                    id="text-input-control-897251573"
+                    required=""
+                    placeholder="Insira um link para a foto do produto"
+                    [(ngModel)] = "requestProduto.photo"
+                    aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+                  />
+                <div id="text-input-error-897251573" class="dds__invalid-feedback">Insira o link da foto do produto</div>
+              </div>
+              </div>
+              <div class="dds__input-text__container">
+                  <label id="text-input-label-gdfgsfd" for="text-input-control-name-897251573">Preço do produto <span>*</span></label>
+                <div class="dds__input-text__wrapper">
+                    <input
+                      type="text"
+                      class="dds__input-text"
+                      name="text-input-control-name-897251573"
+                      id="text-input-control-897251573"
+                      required=""
+                      placeholder="99.9"
+                      [(ngModel)] = "requestProduto.price"
+                      aria-labelledby="text-input-label-897251573 text-input-helper-897251573"
+                    />                        
+                  <div id="text-input-error-897251573" class="dds__invalid-feedback">Digite o preço do produto</div>
+                </div>
+              </div>
+              <div class="dds__text-area__container" data-dds="text-area">
+              <div class="dds__text-area__header">
+                  <label id="text-area-label-942787111" for="text-area-control-942787111">Descrição do produto<span>*</span></label>
+                  </div>
+                    <div class="dds__text-area__wrapper">
+                      <textarea
+                        class="dds__text-area"
+                        name="text-area-control-name-333089901"
+                        id="text-area-control-333089901"
+                        data-maxlength="255"
+                        placeholder="Descrição do produto"
+                        aria-required="true"
+                        aria-labelledby="text-area-label-333089901 text-area-helper-333089901"
+                        required=""
+                        [(ngModel)] = "requestProduto.description"
+                      ></textarea>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+      </fieldset>
+      <div class="buttons">
+        <button class="dds__button dds__button--secondary" type="button" routerLink="/home/produtos">Voltar</button>
+        <button class="dds__button" type="button" (click)="cadastrarProduto()">Salvar</button>
+      </div> 
+    </form>
+
+</section>
+
+</section>
