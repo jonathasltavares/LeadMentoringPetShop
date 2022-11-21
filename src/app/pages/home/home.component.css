@@ -124,4 +124,19 @@ a.nav-item:hover{
     -ms-flex: 0 0 0;
     flex: 0 0 0;
 }
+html, body, .content{
+    height: 100%;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+
+  }
+.footer {
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
 
