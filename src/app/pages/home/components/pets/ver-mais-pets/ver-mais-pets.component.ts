@@ -41,8 +41,8 @@ export class VerMaisPetsComponent {
       }, erro =>{
         if(erro.status == 200){
           this.formModal.hide();
-          window.alert("pets deletado")
-          this.route.navigate(['/home/petss'])
+          window.alert("pet deletado")
+          this.route.navigate(['/home/pets'])
         }
       }
     )
