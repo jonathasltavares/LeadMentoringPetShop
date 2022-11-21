@@ -1,7 +1,6 @@
 .flexcontainer{
     display: flex;
     flex-direction: row;
-    min-height: 550px;
     align-items: center;
     justify-content: center;
     background-color: #F9F9F9;

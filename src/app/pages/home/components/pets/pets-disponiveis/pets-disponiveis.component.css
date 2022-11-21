@@ -13,7 +13,6 @@
 .dds__container{
     display: flex;
     max-width: none;
-    min-height: 500px;
     margin: 0;
     padding: 0;
     justify-content: center;
