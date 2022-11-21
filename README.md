@@ -5,47 +5,45 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-## [LEAD MENTORING] - Valorant Project - Angular version
-Esse projeto foi proposto pelo Christian Castro, mentor do programa Lead Mentoring, o qual estou participando, da Dell Lead, e tem como objetivo a criação de uma landing page baseada no jogo Valorant da Riot Games.  
-  
-  
-Nessa segunda etapa do desafio desafio, passamos o que tinhamos feito na <a href="https://github.com/jonathasltavares/-Lead-Mentoring--Valorant-Project/tree/develop" target="_blank">primeira parte do projeto</a>  para o Angular.
-
+## [LEAD MENTORING] - Petshop
+Esse projeto foi proposto pelo Christian Castro, mentor do programa Lead Mentoring, e consistia na criação de uma aplicação FullStack para Petshops. 
 
 ## Tecnologias 
 
 Tecnologias usadas nesse projeto:
 
 * Angular 
+* DDS - Dell Design System
+* Bootstrap
 
 ## Páginas  
 
-### 1 - Cadastro
-
-![Homepage image](/src/assets/README/cadastro.png)
-
-### 2 - Login
+### 1 - Login
 
 ![Homepage image](/src/assets/README/login.png)
 
-### 3 - Home
+### 2 - Cadastro
 
-![Homepage image](/src/assets/README/home.png)
+![Homepage image](/src/assets/README/cadastro.png)
 
+### 3 - Home - Produtos
 
-### 4 - Notícias
-
-![Login](/src/assets/README/noticias.png)
-
-
-### 5 - Agentes
-
-![Sign up](/src/assets/README/agentes.png)
+![Homepage image](/src/assets/README/produtos.png)
 
 
-### 6 - Sobre o jogo
+### 4 - Produtos - Registrar
 
-![Dashboard](/src/assets/README/sobre.png)
+![Login](/src/assets/README/registrarprod.png)
+
+
+### 5 - Produtos - Ver mais
+
+![Sign up](/src/assets/README/vermaisProd.png)
+
+
+### 6 - Home - Pets
+
+![Dashboard](/src/assets/README/pets.png)
 
 
 ## Links
