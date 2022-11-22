@@ -1,5 +1,5 @@
 .flexcontainer{
-    height: 100vh;
+    min-height: 100vh
 }
 .dds__card__content{
     padding-bottom: 0;
@@ -27,6 +27,7 @@
     justify-content: center;
     margin: 0;
     margin-bottom: 50px;
+    height: auto;
 }
 .dds__md-3{
     width: 376px;
@@ -106,6 +107,7 @@
 }
 .div-cards{
     background: #F9F9F9;
+    height: auto;
 }
 .card_description{
     height: 90px;
