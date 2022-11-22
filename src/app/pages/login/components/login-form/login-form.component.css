@@ -15,7 +15,7 @@ label{
     height: 450px;
 }
 .dds__form.dds__container{
-    width: 600px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;

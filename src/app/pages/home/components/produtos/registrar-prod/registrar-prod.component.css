@@ -30,7 +30,7 @@ label{
     background-color: #F9F9F9;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100%;
 }
 .dds__form.dds__container{
     width: 1300px;
@@ -38,6 +38,7 @@ label{
     align-items: center;
     flex-direction: column;
     gap: 25px;
+    height: 100%;
 
 }
 input{
