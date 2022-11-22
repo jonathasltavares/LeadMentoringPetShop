@@ -46,6 +46,7 @@ label{
     align-items: center;
     flex-direction: column;
     gap: 25px;
+    height: 100%;
 
 }
 input{

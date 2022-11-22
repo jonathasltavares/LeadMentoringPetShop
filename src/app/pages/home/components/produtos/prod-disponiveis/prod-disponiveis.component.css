@@ -1,3 +1,6 @@
+.flexcontainer{
+    height: 100vh;
+}
 .dds__card__content{
     padding-bottom: 0;
 }
