@@ -15,7 +15,11 @@ Tecnologias usadas nesse projeto:
 * Angular 
 * DDS - Dell Design System
 * Bootstrap
+  
+## Você pode ver esse projeto sendo colocado em prática:
 
+- [LMPetshop](https://lmpetshop.vercel.app/login) - [Repository](https://github.com/jonathasltavares/LeadMentoringPetShop)  
+Petshop fictício já criado para realizar login: email: admin@admin.com - password: 123
 ## Páginas  
 
 ### 1 - Login
