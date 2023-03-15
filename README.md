@@ -53,7 +53,7 @@ Petshop fictício já criado para realizar login: email: admin@admin.com - passw
 ## Links
 
   <a href="https://github.com/jonathasltavares/LeadMentoringPetShopAPI" target="_blank" rel="noopener noreferrer">API</a><br>
-  <a href="https://lmpetshop.vercel.app/login" target="_blank" rel="noopener noreferrer">Deploy</a>
+  <a href="https://lmpetshop.vercel.app/login" target="_blank" rel="noopener noreferrer"><s>Deploy</s></a> (atualmente indisponível por limitações da plataforma de deploy)
   
 
 ## Authors
